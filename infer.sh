@@ -1,4 +1,4 @@
-sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)
+apt install opam
 # Checkout Infer
 git clone https://github.com/facebook/infer.git
 cd infer
