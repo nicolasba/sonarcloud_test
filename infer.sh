@@ -1,4 +1,3 @@
-apt install opam
 # Checkout Infer
 git clone https://github.com/facebook/infer.git
 cd infer

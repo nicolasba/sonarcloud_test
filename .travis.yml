@@ -1,6 +1,9 @@
 language: java
-sudo: false
+sudo: true
 install: true
+
+services: 
+   - docker 
 
 addons:
   sonarcloud:
@@ -8,6 +11,9 @@ addons:
     token:
       secure: "18a54de57ae21f06658b9532594b2823a2532047"
 
+before_install:
+        - docker pull ocaml/opam2
+        - docker run -it ocaml/opam2 bash
 
 jdk:
   - oraclejdk8
