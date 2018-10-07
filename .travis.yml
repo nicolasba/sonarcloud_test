@@ -13,7 +13,6 @@ addons:
 
 before_install:
         - docker pull ocaml/opam2
-        - docker run -it ocaml/opam2 bash
 
 jdk:
   - oraclejdk8
