@@ -3,4 +3,3 @@ curl -sSL "https://github.com/facebook/infer/releases/download/v$VERSION/infer-l
 | sudo tar -C /opt -xJ && \
 ln -s "/opt/infer-linux64-v$VERSION/bin/infer" /usr/local/bin/infer
 
-infer run -- ./gradlew build
